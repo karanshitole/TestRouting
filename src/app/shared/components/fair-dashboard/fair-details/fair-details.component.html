@@ -1,0 +1,23 @@
+
+
+<div class="fairs-details">
+    <div class="fair-banner">
+        <img [src]="fairObj.bannerUrl"  [alt]="">
+        <div class="eventDetails">
+            <h2>
+                {{fairObj.fairName}}  {{(fairObj.startDate *1000)|date}}
+            </h2>
+            <p>
+                {{fairObj.type}}
+            </p>
+            <p>
+                Registration Deadline : {{((fairObj.startDate *1000)-86400000|date)}}
+            </p>
+        </div>
+        <!-- <img src = "../../../../../assets/images/" -->
+    </div>
+
+    <p class="p-4" [innerHTML]="fairObj.candidateDescription">
+        
+    </p>
+</div>

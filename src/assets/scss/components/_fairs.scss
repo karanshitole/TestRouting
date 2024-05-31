@@ -1,0 +1,62 @@
+
+.fairs-heading{
+    background-image: linear-gradient(90deg,$color-primary 0%,$color-secobdary 100%);
+    color: $color-white;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.faircard{
+    background-image: linear-gradient(90deg,$color-primary 0%,$color-secobdary 100%);
+    color: $color-white;
+    cursor: pointer;
+
+    .eventDetails{
+        background-color: $color-white;
+        padding: 15px;
+        color: $color-dark;
+        border-radius: 5px;
+        position: relative;
+    }
+    &.active::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: #156e72;
+        top: 50%;
+        position: absolute;
+        right: -7.5px;
+        transform: rotate(45deg);
+    }
+}
+
+.fairs-details{
+    background-color: $color-white;
+    .fair-banner{
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(1deg, black, transparent);
+        }
+        .eventDetails{
+            position: absolute;
+            top: 25%;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            padding: 20px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+
+<p>
+
+    The userName is <strong>{{userInfo.userName}}</strong>
+     whos user is <strong>{{userInfo.userId}}</strong>
+</p>
+
+<hr> 
+
+<button
+routerLink="edit"
+class="btn-outline-primary mr-3">Edit User</button>
+<button
+routerLink="edit"
+class="btn-outline-danger" (click)="onDeleteUser()" >Delete User</button>

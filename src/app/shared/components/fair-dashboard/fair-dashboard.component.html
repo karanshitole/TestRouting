@@ -1,0 +1,12 @@
+
+
+<h2 class="fairs-heading">fairs</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <app-fair-card [fairObj]="fair" *ngFor="let fair of fairsArr"></app-fair-card>
+    </div>
+    <div class="col-md-8">
+        <router-outlet></router-outlet>
+    </div>
+</div>

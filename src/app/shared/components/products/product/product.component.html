@@ -1,0 +1,15 @@
+<p>
+    The Product is <strong>{{productObj.pname}}</strong> and
+    its satatus is <strong>{{productObj.pstatus}}</strong>
+</p>
+
+
+<button
+routerLink="edit"
+[queryParamsHandling]="'preserve'"
+class="btn btn-outline-primary btn-sm mr-3">Edit Product</button>
+<button
+(click)="onRemoveProduct()"
+class="btn btn-outline-danger btn-sm">Remove Product</button>
+
+<!-- [routerLink]="['/products',productObj.pid,'edit']" -->

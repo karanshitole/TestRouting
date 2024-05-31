@@ -1,0 +1,19 @@
+
+
+.main{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .auth-form{
+        width: 600px;
+        max-width: 90%;
+        background-color: #fff;
+        padding: 10px;
+    }
+}
